@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UUID</title>
+	<script src="https://cdn.jsdelivr.net/npm/device-uuid@1.0.4/lib/device-uuid.min.js"></script>
+
+</head>
+<body>
+	<div style="background: black">
+		<span style="color: red">Device UUID:</span> &nbsp;
+		<h1 style="color: white" id="display"></h1>
+	</div>
+	<script type="text/javascript">
+		var uuid = new DeviceUUID().get();
+		document.getElementById("display").innerText = uuid;
+	</script>
+</body>
+</html>
